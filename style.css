@@ -346,7 +346,7 @@ html {
 
 
 .right-side {
-    background: url(images/soukou_photo.JPG);
+    background: url(soukou_photo.JPG);
     height: 23em;
     width: 23em;
     background-position: center;
@@ -405,7 +405,7 @@ html {
    gap: 5em;
 }
 .aboutus-left-side1 {
-    background: url(images/soukou_photo.JPG);
+    background: url(soukou_photo.JPG);
     height: 23em;
     width: 23em;
     max-height: auto;
