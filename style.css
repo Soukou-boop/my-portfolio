@@ -65,6 +65,7 @@ html {
 /*hidden div*/
 #contactpage {
     position: absolute;
+    position: fixed;
     display: none;
     z-index: 1000;
     height: 100vh;
@@ -131,7 +132,7 @@ html {
 .contact_title {
     display: flex;
     align-items: center;
-    gap: 0.2rem;
+    
     animation: contactTanim 1s ease-in-out;
 }
 @keyframes contactTanim {
@@ -155,7 +156,7 @@ html {
     
     justify-content: center;
     flex-direction: column;
-    gap: 2.2em;
+    gap: 1em;
     animation: contactEanim 1s ease-in-out;
 }
 
@@ -189,7 +190,19 @@ html {
     cursor: pointer;
     transition: 1s ease-in-out;
 }
-.whatsapp:hover {
+
+.whatsapp2 {
+    color: green;
+    background: white;
+    box-shadow: 0px 3px 40px rgba(0, 128, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 3rem;
+    width: 10em;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.whatsapp:hover, .whatsapp2:hover{
     transform: scale(1.2);
 }
 
@@ -242,6 +255,7 @@ html {
     display: flex;
     align-items: center;
     text-wrap: nowrap;
+    margin-top: 0.3rem;
     
 }
 
@@ -276,6 +290,7 @@ html {
     text-wrap: nowrap;
     font-size: 3vw;
     animation: secondlineanim 1s ease-in-out;
+    margin-top: 0.3rem;
 }
 @keyframes secondlineanim {
     0%{
@@ -331,7 +346,7 @@ html {
 
 
 .right-side {
-    background: url(soukou_photo.JPG);
+    background: url(images/soukou_photo.JPG);
     height: 23em;
     width: 23em;
     background-position: center;
@@ -390,7 +405,7 @@ html {
    gap: 5em;
 }
 .aboutus-left-side1 {
-    background: url(soukou_photo.JPG);
+    background: url(images/soukou_photo.JPG);
     height: 23em;
     width: 23em;
     max-height: auto;
@@ -563,6 +578,17 @@ html {
     border-radius: 20px;
     transition: 1s ease-in-out;
 }
+.services-button2 {
+    margin-top: 1.2em;
+    padding: 10px 15px;
+    width: 10em;
+    background: linear-gradient(to left, rgb(2, 211, 2), green);
+    color: white;
+    border: none;
+    box-shadow: 0px 3px 30px green;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
 
 .services-button:hover {
     transform: scale(1.2);
@@ -576,4 +602,147 @@ html {
 
 .explan1 {
     text-align: center;
+}
+/* about us, see more page*/
+
+.navbar3 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    height: 10dvh;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    font-size: 1.2vw;
+    z-index: 1000;
+}
+
+.main-container-2 {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background: linear-gradient(350deg, rgb(78, 78, 78), black );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.child-container-5 {
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 5%;
+    
+}
+
+.zseemoreT {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.special-style2 {
+    color: green;
+
+}
+.textside1 {
+    width: 25em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.5vw;
+
+}
+.textside2 {
+    
+    width: 27em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 2.2em;
+    display: flex;
+   
+    justify-content: start;
+    flex-direction: column;
+    gap: 1.2em;
+    font-size: 1.3vw;
+}
+.zseemoreP2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/*section 2, see more about me*/
+.main-container-9 {
+    padding: 5rem;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(78, 78, 78), black );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.child-container-6 {
+    height: 100%;
+    width: 100%;
+    gap: 1.8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.work1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.8em;
+}
+.work2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.8em;
+}
+
+.viodeecc1 {
+  width: 20em;
+  max-width: 100%;
+  
+}
+.videoecc2 {
+    width: 20em;
+    max-width: 100%;
+   
+}
+.ideaside, .website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 2em;
 }
