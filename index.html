@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+         <!--nav bar-->
+    <nav class="navbar">
+        <div class="name"><h1 class="last_name">Soukou</h1> <h1 class="first_name">   Franck-Axel</h1></div>
+         <div class="menu">
+             <div class="menu_list">
+                 <a href="index.html" class="decor2"><div class="home">Home</div></a>
+                 <a href="aboutuspage.html" class="decor"><div class="about">About</div></a>
+                 <a href="services.html" class="decor"> <div class="services">Services</div></a>
+                 <div class="contact" onclick="showDiv()">Contact</div>
+             </div>
+         </div>  
+     </nav>
+    <!--hidden div-->
+     <div id="contactpage">
+        <div class="command">
+            <div class="button" onclick="hideDiv()">
+                <div class="line_one"></div>
+                <div class="line_two"></div>
+            </div>
+        </div>
+        <div class="boxelement">
+            <div class="contact_title"><h1>Contact</h1><h1 class="special-style">Me</h1></div>
+            <div class="contact_element">
+                <div class="join"><h2>E-mail:</h2><h3>eskadebelair@gmail.com</h3></div>
+                <div class="join"><h2>Mobile:</h2><h3>[+225] 0173659493 / [+233] 0538939262</h3></div>
+                <div class="whatsapp">Whatsapp</div>
+                
+
+            </div>
+
+        </div>
+     </div>
+     <!--section element-->
+     <section class="main-container">
+         <div class="child-main-container">
+             <div class="left-side">
+                 <div class="text">
+                     <h4 class="first_line">Hello, i'm</h4>
+                     <h2 class="second_line">Soukou Franck-Axel,</h2>
+
+                     <div class="profession">
+                        <h4><div class="profession1">And I'm a</div> </h4><h4><div class="profession2">  Graphic & Web Designer!</div></h4>
+                     </div>
+
+                     <p class="resume">Hi i'm Soukou Franck-Axel, a passionate front-end developer specializing in translating design concepts into seamless and interactive web experiences using HTML, CSS, and JavaScript.</p>
+                 </div>
+ 
+                 <button class="cv-button" onclick="downloadFile('Document/GRAPHIC_AND_WEB_DESIGN.docx', 'GRAPHIC_AND_WEB_DESIGN.docx')">Download CV</button>
+             </div>
+             <div class="right-side">
+                
+             </div>
+         </div>
+     </section>
+  
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*nav bar styling*/
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    height: 10dvh;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: none;
+    font-size: 1.2vw;
+}
+.menu_list {
+    display: flex;
+    align-items: center;
+}
+.name {
+    width: 18em;
+    margin-left: -1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-around;
+    
+}
+.last_name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20em;
+}
+.menu_list {
+    width: 100%;
+    justify-content: space-around;
+}
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.home, .about, .services, .contact {
+    cursor: pointer;
+    transition: 1s ease;
+}
+.home:hover, .about:hover, .services:hover, .contact:hover {
+    color: green;
+    text-shadow: 3px 3px 6px green;
+    transform: scale(1.1);
+
+}
+/*hidden div*/
+#contactpage {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+   
+}
+.command {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+  
+}
+.button {
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+.button:active {
+    background-color: red;
+}
+.line_one {
+    height: 100%;
+    width: 1%;
+    background-color: white;
+    rotate: 50deg;
+}
+.line_two {
+    height: 100%;
+    width: 1%;
+    background-color: white;
+    rotate: 310deg;
+
+}
+.boxelement {
+    height: 29rem;
+    width: 29rem;
+   
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    gap: 2em;
+    
+}
+.contact_title {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    animation: contactTanim 1s ease-in-out;
+}
+@keyframes contactTanim {
+    
+        0%{
+            opacity: 0;
+            transform: translateY(-2em);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0em);
+        }
+}
+
+.contact_element {
+    height: 50%;
+    width: 95%;
+    
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.2em;
+    animation: contactEanim 1s ease-in-out;
+}
+
+@keyframes contactEanim {
+    0%{
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+.join {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 1.2em;
+    border-radius: 3rem;
+    border: 0.2em solid green;
+    padding: 1rem;
+}
+.whatsapp {
+    color: white;
+    background: linear-gradient(to left, rgb(2, 211, 2), green);
+    box-shadow: 0px 3px 40px rgba(0, 128, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 3rem;
+    width: 10em;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.whatsapp:hover {
+    transform: scale(1.2);
+}
+
+/*section*/
+.main-container {
+    height: 100vh;
+    height: 100dvh;
+    background: linear-gradient(350deg, rgb(78, 78, 78), black );
+
+
+}
+
+
+.child-main-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.left-side {
+    
+    width: 15em;
+    color: white;
+    animation: leftanim 1s ease-in-out;
+
+}
+
+@keyframes leftanim {
+    0%{
+        transform: translateY(-5em);
+    }
+    100%{
+        transform: translateY(0em);
+    }
+
+}
+.text {
+   width: 180%;
+   height: 100%;
+   font-size: 1.8vw;
+   
+}
+
+
+
+
+.profession {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    
+}
+
+
+.profession2 {
+   
+    display: flex;
+    margin-left: 0.5em;
+    color: green;
+    border-right: 2px solid green;
+    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }  
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.second_line {
+    text-wrap: nowrap;
+    font-size: 3vw;
+    animation: secondlineanim 1s ease-in-out;
+}
+@keyframes secondlineanim {
+    0%{
+        opacity: 0;
+        transform: translateX(-2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+
+.resume {
+    
+    margin-top: 1.5em ;
+    font-size: 1.2vw;
+    animation: resumeanim 1s ease-in-out;
+}
+
+@keyframes resumeanim {
+    0%{
+        opacity: 0;
+        transform: translateX(3em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+.cv-button {
+    position: absolute;
+    margin-top: 2em;
+    border: none;
+    padding: 10px 15px;
+    background: linear-gradient(to left, rgb(2, 211, 2), green);
+    color: white;
+    border-radius: 20px;
+    transition: 1s ease;
+    box-shadow: 0px 3px 30px rgba(0, 128, 0, 0.808);
+    
+}
+.cv-button:hover {
+    transform: scale(1.2);
+}
+.cv-button:active {
+    background: white;
+    color: green;
+    transform: scale(1.2);
+   
+}
+
+
+
+.right-side {
+    background: url(images/soukou_photo.JPG);
+    height: 23em;
+    width: 23em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid green;
+    box-shadow: 0px 3px 40px  green;
+    border-radius: 50%;
+    animation: imageanim 1s ease-in-out;
+   
+}
+@keyframes imageanim {
+    0%{
+       opacity: 0;
+       transform: translateY(2em);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+       
+    }
+}
+
+.decor  {
+    text-decoration: none;
+    color: white;
+}
+.decor2 {
+    text-decoration: none;
+    color: green;
+    text-shadow: 3px 3px 6px green;
+}
+
+
+
+/*about us page styling*/
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    height: 10dvh;
+    width: 100%;
+    top: 0;
+    color: white;
+    background-color: black;
+}
+.child-container-1 {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 5em;
+}
+.aboutus-left-side1 {
+    background: url(images/soukou_photo.JPG);
+    height: 23em;
+    width: 23em;
+    max-height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid green;
+    box-shadow: 0px 3px 30px  green;
+    border-radius: 50%;
+    animation: aboutusanim 1s ease-in-out;
+   
+}
+@keyframes aboutusanim {
+    0%{
+       opacity: 0;
+       transform: translateX(-5em);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0em);
+       
+    }
+}
+
+.aboutus-right-side {
+    width: 22em;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    gap: 1em;
+    animation: abrusrightside 1s ease-in-out;
+}
+
+@keyframes abrusrightside {
+    0%{
+        opacity: 0;
+        transform: translateX(2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+.aboutus-title {
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    animation: abtustitle 1s ease-in-out;
+}
+@keyframes abtustitle {
+    0%{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+.special-style {
+    color: green;
+    margin-left: 0.2em;
+}
+.about-us-button {
+    background: linear-gradient(to left, rgb(2, 211, 2), green);
+    color: white;
+    box-shadow: 0px 3px 30px green;
+    padding: 10px 15px;
+    width: 10em;
+    border-radius: 20px;
+    border: none;
+    transition: 1s ease-in-out;
+}
+.about-us-button:hover {
+    transform: scale(1.2);
+}
+.about-us-button:active {
+   
+    background: white;
+    color: green;
+}
+
+/*services page style*/
+.child-container-2 {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+
+}
+
+.services-title {
+    font-size: 1.4vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    animation: servecestitleanim 1s ease-in-out;
+}
+@keyframes servecestitleanim {
+    0%{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+.services-options {
+    height: 50%;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    animation: servicesopanim 1s ease-in-out;
+    
+}
+@keyframes servicesopanim {
+    0%{
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+.option1, .option2, .option3 {
+    height: 18em;
+    width: 23em;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2%;
+    border: transparent;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+   
+}
+
+.option1:hover, .option2:hover, .option3:hover {
+    border: 1px solid rgb(0, 187, 0);
+}
+.services-button {
+    padding: 10px 15px;
+    width: 10em;
+    background: linear-gradient(to left, rgb(2, 211, 2), green);
+    color: white;
+    border: none;
+    box-shadow: 0px 3px 30px green;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
+
+.services-button:hover {
+    transform: scale(1.2);
+    
+   
+}
+.services-button:active {
+    color: green;
+    background: white;
+}
+
+.explan1 {
+    text-align: center;
+}
